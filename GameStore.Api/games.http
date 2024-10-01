@@ -25,3 +25,7 @@ Content-Type: application/json
     "price": 59.00,
     "releasedDate": "2013-09-17"
   }
+
+
+###
+DELETE http://localhost:5146/games/2

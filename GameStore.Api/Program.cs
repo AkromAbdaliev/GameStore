@@ -1,4 +1,5 @@
 using GameStore.Api.Dtos;
+using Microsoft.AspNetCore.Http.HttpResults;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -49,6 +50,14 @@ app.MapPut("games/{id}", (int id, UpdateGameDto updatedGame) =>
         updatedGame.Price,
         updatedGame.ReleasedDate
     );
+
+    return Results.NoContent();
+});
+
+//DELETE /games/1
+app.MapDelete("games/{id}", (int id) => 
+{
+    games.RemoveAll(game => game.Id == id);
 
     return Results.NoContent();
 });
