@@ -1,7 +1,7 @@
 GET http://localhost:5146/games
 
 ###
-GET http://localhost:5146/games/1
+GET http://localhost:5146/games/2
 
 ###
 POST http://localhost:5146/games
@@ -16,16 +16,17 @@ Content-Type: application/json
 
 
 ###
-PUT  http://localhost:5146/games/4
+PUT http://localhost:5146/games/2
 Content-Type: application/json
 
-  {
-    "name": "GTA 5",
-    "genre": "Action-adventure",
-    "price": 59.00,
-    "releasedDate": "2013-09-17"
-  }
+{
+    "name": "CS 1.6",
+    "genreId": 3, 
+    "price": 14.99, 
+    "releasedDate": "2000-09-09" 
+}
+
 
 
 ###
-DELETE http://localhost:5146/games/2
+DELETE http://localhost:5146/games/1
