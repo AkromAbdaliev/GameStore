@@ -8,10 +8,10 @@ POST http://localhost:5146/games
 Content-Type: application/json
 
 {
-    "name": "Minecraft",
-    "genre": "Kids and Family",
-    "price": 19.99,
-    "releasedDate": "2011-11-18"
+    "name": "GTA San Andreas",
+    "genreId": 2,
+    "price": 31.69,
+    "releasedDate": "2004-11-26"
 }
 
 
